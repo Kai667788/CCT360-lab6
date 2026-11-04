@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Mississauga Weather - Kevin Wang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Mississauga Weather</h1>
+        <p>Lab 6: Working with API</p>
+        <p>By Kevin Wang</p>
+    </header>
+
+    <main>
+        <div class="weather-box">
+            <h2>Weather Right Now</h2>
+            <p>I wanted to make a small website that checks the weather where I live.</p>
+
+            <h3>Mississauga, Ontario</h3>
+            <p>Current temperature:</p>
+            <p id="temperature">--°C</p>
+            <p id="message">I am checking the weather...</p>
+
+            <button id="refresh-button">Check Weather Again</button>
+            <p id="status">Loading weather...</p>
+        </div>
+
+        <div class="next-box">
+            <h2>What I Want to Add Next</h2>
+            <p>I have the temperature working first. I still want to add:</p>
+            <ul>
+                <li>Wind speed</li>
+                <li>A temperature bar</li>
+                <li>More details about the weather</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made by Kevin Wang for CCT360 Lab 6.</p>
+        <p>Weather data from <a href="https://open-meteo.com/" target="_blank">Open-Meteo</a>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8eef5;
+    color: #1f2933;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #334e68;
+    color: white;
+    padding: 22px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+main {
+    width: 75%;
+    margin: 25px auto;
+}
+
+.weather-box {
+    background-color: white;
+    border: 1px solid #b5c4d3;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+#temperature {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 18px;
+}
+
+#message {
+    font-size: 18px;
+}
+
+button {
+    background-color: #334e68;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #527799;
+}
+
+#status {
+    font-size: 13px;
+    color: #555;
+}
+
+.next-box {
+    background-color: #f5f7fa;
+    border: 1px dashed #b5c4d3;
+    padding: 12px;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+footer {
+    padding: 15px;
+    font-size: 13px;
+}
+
+/* I change the background using the temperature from the API. */
+body.cold {
+    background-color: #d9e9f8;
+}
+
+body.mild {
+    background-color: #fff4d7;
+}
+
+body.hot {
+    background-color: #ffe0d5;
+}
