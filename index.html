@@ -15,33 +15,63 @@
     </header>
 
     <main>
-        <div class="weather-box">
+        <section class="weather-box">
             <h2>Weather Right Now</h2>
-            <p>I wanted to make a small website that checks the weather where I live.</p>
+            <p>I made this small website to check the weather in Mississauga.</p>
+            <p>I use a public API to get new weather information.</p>
 
             <h3>Mississauga, Ontario</h3>
-            <p>Current temperature:</p>
+            <p>Current temperature</p>
             <p id="temperature">--°C</p>
             <p id="message">I am checking the weather...</p>
 
+            <div class="details">
+                <div class="detail-box">
+                    <h3>Wind Speed</h3>
+                    <p id="wind-speed">-- km/h</p>
+                </div>
+                <div class="detail-box">
+                    <h3>Cloud Cover</h3>
+                    <p id="cloud-cover">--%</p>
+                </div>
+            </div>
+
+            <p id="wind-message">I will check how windy it is.</p>
             <button id="refresh-button">Check Weather Again</button>
             <p id="status">Loading weather...</p>
-        </div>
+            <p class="small-text">Reading time: <span id="reading-time">--</span></p>
+        </section>
 
-        <div class="next-box">
-            <h2>What I Want to Add Next</h2>
-            <p>I have the temperature working first. I still want to add:</p>
-            <ul>
-                <li>Wind speed</li>
-                <li>A temperature bar</li>
-                <li>More details about the weather</li>
-            </ul>
-        </div>
+        <section class="visual-box">
+            <h2>My Temperature Bar</h2>
+            <p>I made a simple bar. When the temperature is higher, the bar gets taller.</p>
+
+            <div class="temperature-area">
+                <div id="temperature-bar"></div>
+            </div>
+            <p id="bar-message">Waiting for temperature data...</p>
+        </section>
+
+        <section class="visual-box">
+            <h2>How Cloudy Is It?</h2>
+            <p>I also use the cloud cover percentage to change the width of this bar.</p>
+
+            <div class="cloud-area">
+                <div id="cloud-bar"></div>
+            </div>
+            <p id="cloud-message">Waiting for cloud data...</p>
+        </section>
+
+        <section class="about-box">
+            <h2>About My Project</h2>
+            <p>I wanted to try using live data instead of writing weather numbers myself.</p>
+            <p>I used JavaScript to request the data, show the results, and change my webpage.</p>
+        </section>
     </main>
 
     <footer>
         <p>Made by Kevin Wang for CCT360 Lab 6.</p>
-        <p>Weather data from <a href="https://open-meteo.com/" target="_blank">Open-Meteo</a>.</p>
+        <p>Weather data by <a href="https://open-meteo.com/">Open-Meteo.com</a> (CC BY 4.0).</p>
     </footer>
 
     <script src="script.js"></script>
